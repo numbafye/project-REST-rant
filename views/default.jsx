@@ -13,7 +13,7 @@ function Def(html) {
       </head>
       <body>{html.children}</body>
     </html>
-  );
+  ); 
 }
 
 module.exports = Def;
