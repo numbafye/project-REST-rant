@@ -26,6 +26,4 @@ function index(data) {
   );
 }
 
-//part 7
-
 module.exports = index;
