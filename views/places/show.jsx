@@ -23,10 +23,20 @@ function show(data) {
               <h3>No comments yet!</h3>
             </div>
           </div>
+          <a href={`/places/${data.id}/edit`} className="btn btn-warning">
+            Edit
+          </a>
+          <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
+            <button type="submit" className="btn btn-danger">
+              Delete
+            </button>
+          </form>
         </div>
       </main>
     </Def>
   );
 }
+
+//Part 6.5.1
 
 module.exports = show;
