@@ -49,3 +49,11 @@ body {
 main {
   background-color: white;
 }
+
+a {
+  padding: 1em;
+}
+
+.btn {
+  margin-inline: 10em;
+}
