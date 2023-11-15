@@ -8,6 +8,7 @@ mongoose.connect(
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    poolsize:2,
   },
   () => {
     console.log("Connected to Mongo:", process.env.MONGO_URI);

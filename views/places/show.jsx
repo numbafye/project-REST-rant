@@ -8,6 +8,9 @@ function show(data) {
         <div className="row">
           <div className="col-sm-6">
             <img src={data.place.pic} alt={data.place.name} />
+            <h3>
+              Located in {data.place.city}, {data.place.state}
+            </h3>
           </div>
           <div className="col-sm-6">
             <h1>{data.place.name}</h1>
@@ -15,9 +18,8 @@ function show(data) {
             Not Rated
             <br />
             <h2>Description</h2>
-            <h3>
-              Located in {data.place.city}, {data.place.state}
-            </h3>
+            <h3>{data.place.showEstablished()}</h3>
+            <h4>Serving {data.place.cuisines}</h4>
             <div>
               <h2>Comments</h2>
               <h3>No comments yet!</h3>
