@@ -1,5 +1,5 @@
 const React = require("react");
-const Def = require("../default.jsx");
+const Def = require("../default");
 
 function edit_form(data) {
   return (
@@ -15,15 +15,12 @@ function edit_form(data) {
                 id="name"
                 name="name"
                 value={data.place.name}
-                required
               />
             </div>
             <div className="form-group col-sm-6">
               <label htmlFor="pic">Place Picture</label>
-              <input className="form-control" id="pic" name="pic" />
+              <input className="form-control" type="url" id="pic" name="pic" />
             </div>
-          </div>
-          <div className="row">
             <div className="form-group col-sm-6">
               <label htmlFor="city">City</label>
               <input className="form-control" id="city" name="city" />
@@ -32,17 +29,30 @@ function edit_form(data) {
               <label htmlFor="state">State</label>
               <input className="form-control" id="state" name="state" />
             </div>
+            <div className="form-group col-sm-6">
+              <label htmlFor="founded">Founded</label>
+              <input
+                className="form-control col-sm-6"
+                id="founded"
+                name="founded"
+                value={data.place.founded}
+              />
+            </div>
+            <div className="form-group col">
+              <label htmlFor="cuisines">Cuisines</label>
+              <input
+                className="form-control"
+                id="cuisines"
+                name="cuisines"
+                required
+              />
+            </div>
           </div>
-          <div className="form-group">
-            <label htmlFor="cuisines">Cuisines</label>
-            <input
-              className="form-control"
-              id="cuisines"
-              name="cuisines"
-              required
-            />
-          </div>
-          <input className="btn btn-primary" type="submit" value="Add Place" />
+          <input
+            className="btn btn-primary"
+            type="submit"
+            value="Submit Changes"
+          />
         </form>
       </main>
     </Def>
