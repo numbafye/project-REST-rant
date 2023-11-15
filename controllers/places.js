@@ -60,3 +60,6 @@ router.delete("/:id/rant/:rantId", (req, res) => {
 });
 
 module.exports = router;
+
+
+//PANOOPTO 8/22-8/24

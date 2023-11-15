@@ -39,6 +39,4 @@ function show(data) {
   );
 }
 
-//Part 6.5.1
-
 module.exports = show;

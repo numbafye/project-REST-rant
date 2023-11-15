@@ -8,7 +8,7 @@ mongoose.connect(
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    poolsize:2,
+    poolsize: 2,
   },
   () => {
     console.log("Connected to Mongo:", process.env.MONGO_URI);
@@ -16,3 +16,4 @@ mongoose.connect(
 );
 
 module.exports.Place = require("./places");
+module.exports.Comment = require("./comment");
